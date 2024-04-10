@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Yeseva+One&display=swap');
+
+:colorpalette {
+    --fond: #422a26 ;
+    --accent: #ff9880 ;
+    --paragraph: #695450 ;
+    --texte: #fff ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #422a26;
+}
+
+p {
+    color: #a79997;
+}
+header em {
+    color:#fff;
+}
+span {
+    color:#ff9880;
+}
+h2 {
+    font-family: 'Yeseva One';
+    color: #fff;
+}
+h1{
+    font-family: 'Yeseva One';
+    color: #fff;
+}
+header {
+    border-bottom: 1px solid #fff;
+    padding: 1.5em 0;
+}
+main nav button {
+    background-color: #ff9880;
+    color: #fff;
+    border: 1px #fff;
+    font-size: 0.5em;
+    padding: 0.5em;
+    font-family: 'Red Hat Display';
+}
+main nav {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    margin: 1em;
+    gap: 0px 1em; 
+    grid-template-areas: 
+        ". . . ."; 
+}
