@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulaire de contact</h1>
+    </header>
+    <main>
+        <form>
+            
+            <label for="prenom">Votre pseudo *</p>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre pseudo">
+            
+            <div id="champ2">
+                <p>Votre mot de passe *</p>
+                <input type="text" id="mdp" placeholder="Entrez votre mot de passe">
+            </div>
+            <div id="champ3">
+                <p>Votre e-mail *</p>
+                <input type="text" id="mail" placeholder="Entrez votre adresse e-mail">
+                </div>
+            <div id="champ4">
+                <p>Motif de la demande *</p>
+                <select type="motif" id="motif">
+                    <option>J'ai une question</option>
+                    <option>J'ai une proposition</option>
+                    <option>Je rencontre un problème</option>
+                    <option>Autre ...</option>
+                </select>
+            </div>
+            <div id="champ5">
+                <p>Votre message *</p>
+                <textarea type="message" id="message" required maxlength="500" placeholder="Entrez votre message"></textarea>
+            </div>
+            <div id="champ6">
+                <p>Niveau d'urgence *</p>
+                <input type="radio" id="urgent" name="niveau_urgence" value="urgent">
+                <label for="urgent">Urgent</label>
+                <input type="radio" id="normal" name="niveau_urgence" value="normal">
+                <p>Normal</p>
+                <input type="radio" id="pas_urgent" name="niveau_urgence" value="pas_urgent">
+                <p>Faible</p>
+            </div>
+            <div id="champ7">
+                <input type="checkbox" id="confidentialité">
+                <p>J'ai lu et j'accepte la politique de confidentialité du site.</p>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</body>
+</html>
